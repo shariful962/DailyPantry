@@ -25,6 +25,7 @@
           --font-secondary: "Poppins", serif;
           --color-textColor: #111111;
           --color-Accent: #179800;
+          --color-secondary: #EFEBE3;
           --text-bannerTitle: 3.5rem;
 
         }
@@ -34,7 +35,9 @@
         .btn {
             @apply bg-Accent text-white py-3 px-8 border-none text-xl rounded-lg;
         }
-        
+        .title {
+            @apply text-4xl font-semibold mb-12;
+        }
       </style>
 </head>
 <body class="font-primary">
@@ -78,7 +81,56 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <section class="service mt-36">
+            <div class="service-content container md:container mx-auto">
+                <h1 class="title text-Accent ml-3 lg:ml-0">Services</h1>
+                <div class="service-box grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="service-card bg-secondary text-center rounded-2xl">
+                        <div class="flex justify-center">
+                            <div class="image-box h-40 w-40 rounded-full bg-white flex justify-center items-center mt-8">
+                                <img src="assets/service.png" alt="service">
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-semibold text-textColor mt-8">
+                            24/7 Services 
+                        </h2>
+                        <p class="text-xl font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                    
+                    <div class="service-card bg-secondary text-center rounded-2xl">
+                        <div class="flex justify-center">
+                            <div class="image-box h-40 w-40 rounded-full bg-white flex justify-center items-center mt-8">
+                                <img src="assets/delivery.png" alt="service">
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-semibold text-textColor mt-8">
+                            Fast Delivery
+                        </h2>
+                        <p class="text-xl font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+
+                    <div class="service-card bg-secondary text-center rounded-2xl">
+                        <div class="flex justify-center">
+                            <div class="image-box h-40 w-40 rounded-full bg-white flex justify-center items-center mt-8">
+                                <img src="assets/healthy.png" alt="service">
+                            </div>
+                        </div>
+                        <h2 class="text-2xl font-semibold text-textColor mt-8">
+                            Healthy Products  
+                        </h2>
+                        <p class="text-xl font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
