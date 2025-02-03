@@ -33,10 +33,10 @@
             @apply font-normal text-xl text-textColor;
         }
         .btn {
-            @apply bg-Accent text-white py-3 px-8 border-none text-xl rounded-lg;
+            @apply cursor-pointer  py-3 px-8 border-none text-xl rounded-lg;
         }
         .title {
-            @apply text-4xl font-semibold mb-12;
+            @apply  text-4xl font-semibold mb-12;
         }
       </style>
 </head>
@@ -57,10 +57,10 @@
             <div class="hidden lg:block">
                 <span class="text-xl text-textColor mr-3"><i class="fa-solid fa-magnifying-glass"></i></span>
                 <span class="text-xl text-textColor mr-3"><i class="fa-solid fa-cart-shopping"></i></span>
-                <button class="bg-transparent border border-Accent px-8 py-3 rounded-lg hover:bg-Accent transition delay-300 hover:text-white text-xl mr-3">
+                <button class="bg-transparent border border-Accent px-8 py-3 rounded-lg hover:bg-Accent transition delay-300 hover:text-white text-xl mr-3 cursor-pointer">
                     Login
                 </button>
-                <button class="btn">
+                <button class="btn bg-Accent text-white">
                     Register
                 </button>
             </div>
@@ -92,10 +92,10 @@
                                 <img src="assets/service.png" alt="service">
                             </div>
                         </div>
-                        <h2 class="text-2xl font-semibold text-textColor mt-8">
+                        <h2 class="text-xl font-semibold text-textColor mt-8">
                             24/7 Services 
                         </h2>
-                        <p class="text-xl font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
+                        <p class="text-base px-2 font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -106,10 +106,10 @@
                                 <img src="assets/delivery.png" alt="service">
                             </div>
                         </div>
-                        <h2 class="text-2xl font-semibold text-textColor mt-8">
+                        <h2 class="text-xl font-semibold text-textColor mt-8">
                             Fast Delivery
                         </h2>
-                        <p class="text-xl font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
+                        <p class="text-base px-2 font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                     </div>
@@ -120,12 +120,130 @@
                                 <img src="assets/healthy.png" alt="service">
                             </div>
                         </div>
-                        <h2 class="text-2xl font-semibold text-textColor mt-8">
+                        <h2 class="text-xl font-semibold text-textColor mt-8">
                             Healthy Products  
                         </h2>
-                        <p class="text-xl font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
+                        <p class="text-base px-2 font-light text-textColor my-3 max-w-[400px] mx-auto lg:w-auto">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product bg-secondary mt-36">
+            <div class="product-content container md:container mx-auto mt-32">
+                <h1 class=" title pt-8 text-Accent ml-3  lg:ml-0">Popular Products</h1>
+                <div class="product-box grid gird-cols-1 lg:grid-cols-2 gap-3">
+                    <div class="product-left h-[400px] bg-gradient-to-l bg-green-500 relative rounded-xl mb-4">
+                        <div class="text absolute mt-4 ml-5 lg:mt-6 lg:ml-7">
+                            <h1 class="text-2xl font-semibold text-white">30% Off</h1>
+                            <p class="text-base font-normal my-3">
+                                Discover a World of treats, toys, and <br> essentials handpick for
+                            </p >
+                            <button class="btn bg-white text-textColor border-none">
+                                Buy Now
+                            </button>
+                        </div>
+                        <div class="absolute right-0 bottom-0">
+                            <img src="assets/vegetable-offer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product-right h-[400px]">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Onion 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/tomato.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Tomato 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/photato.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Photato 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/tomato.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Tomato 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Onion 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+    
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/tomato.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Tomato 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+    
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Onion 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+                            <div class="right-card bg-white flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/photato.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">photato 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+    
+                            <div class="right-card hidden  bg-white lg:flex gap-3 p-2">
+                                <div>
+                                    <img src="assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="text-[#FFC107]"><i class="fa-solid fa-star"></i></span> 4.9 
+                                    <h2 class="text-xl font-medium mt-1">Onion 500 g </h2>
+                                    <p class="text-base font-medium text-textColor">$39.99</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
